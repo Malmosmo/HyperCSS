@@ -1,0 +1,90 @@
+@use "variables";
+
+@each $breakpoint_name, $breakpoint in variables.$breakpoints {
+    @media (min-width: $breakpoint) {
+        @each $spacer_name, $spacer in variables.$spacers {
+            @each $direction_name, $direction in variables.$directions {
+                @if $direction_name == x {
+                    .m#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
+                        margin-left: $spacer;
+                        margin-right: $spacer;
+                    }
+
+                    .p#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
+                        padding-left: $spacer;
+                        padding-right: $spacer;
+                    }
+                } @else if $direction_name == y {
+                    .m#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
+                        margin-top: $spacer;
+                        margin-bottom: $spacer;
+                    }
+
+                    .p#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
+                        padding-top: $spacer;
+                        padding-bottom: $spacer;
+                    }
+                } @else {
+                    .m#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
+                        margin-#{$direction}: $spacer;
+                    }
+
+                    .p#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
+                        padding-#{$direction}: $spacer;
+                    }
+                }
+            }
+
+            .m-#{$breakpoint_name}-#{$spacer_name} {
+                margin: $spacer;
+            }
+
+            .p-#{$breakpoint_name}-#{$spacer_name} {
+                padding: $spacer;
+            }
+        }
+    }
+}
+
+@each $spacer_name, $spacer in variables.$spacers {
+    @each $direction_name, $direction in variables.$directions {
+        @if $direction_name == x {
+            .m#{$direction_name}-#{$spacer_name} {
+                margin-left: $spacer;
+                margin-right: $spacer;
+            }
+
+            .p#{$direction_name}-#{$spacer_name} {
+                padding-left: $spacer;
+                padding-right: $spacer;
+            }
+        } @else if $direction_name == y {
+            .m#{$direction_name}-#{$spacer_name} {
+                margin-top: $spacer;
+                margin-bottom: $spacer;
+            }
+
+            .p#{$direction_name}-#{$spacer_name} {
+                padding-top: $spacer;
+                padding-bottom: $spacer;
+            }
+        } @else {
+            .m#{$direction_name}-#{$spacer_name} {
+                margin-#{$direction}: $spacer;
+            }
+
+            .p#{$direction_name}-#{$spacer_name} {
+                padding-#{$direction}: $spacer;
+            }
+        }
+    }
+
+    .m-#{$spacer_name} {
+        margin: $spacer;
+    }
+
+    .p-#{$spacer_name} {
+        padding: $spacer;
+    }
+}
+/**/

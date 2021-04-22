@@ -1,0 +1,31 @@
+$breakpoints: (
+    // xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+$spacer: 1rem !default;
+
+$spacers: (
+    auto: auto,
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 2,
+    6: $spacer * 3,
+    7: $spacer * 4,
+) !default;
+
+$directions: (
+    "s": left,
+    "t": top,
+    "e": right,
+    "b": bottom,
+    "x": x,
+    "y": y,
+);

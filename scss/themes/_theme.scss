@@ -1,0 +1,11 @@
+@use 'colours';
+
+@each $name, $colour in colours.$colours {
+    .bg-#{$name} {
+        background-color: $colour;
+    }
+
+    .text-#{$name} {
+        color: $colour;
+    }
+}

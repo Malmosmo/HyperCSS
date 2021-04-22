@@ -1,0 +1,24 @@
+@use "../utilities/variables";
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $var from 1 through 12 {
+    .col-#{$var} {
+        flex: 0 0 auto;
+        width: percentage($var / 12);
+    }
+}
+
+@each $breakpoint_name, $breakpoint in variables.$breakpoints {
+    @media (min-width: $breakpoint) {
+        @for $var from 1 through 12 {
+            .col-#{$breakpoint_name}-#{$var} {
+                flex: 0 0 auto;
+                width: percentage($var / 12);
+            }
+        }
+    }
+}

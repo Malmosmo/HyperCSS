@@ -16,7 +16,7 @@
     @media (min-width: $breakpoint) {
         @for $var from 1 through 12 {
             .col-#{$breakpoint_name}-#{$var} {
-                flex: 0 0 auto;
+                flex: 1 0 auto;
                 width: percentage($var / 12);
             }
         }

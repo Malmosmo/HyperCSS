@@ -1,0 +1,23 @@
+// .form-group {}
+// .input-group {}
+// label {}
+// input {}
+
+input {
+    padding: 0.5rem 0.75rem;
+
+    width: 100%;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    box-shadow: none;
+    outline: none;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+label {
+    padding: 1rem 0;
+}

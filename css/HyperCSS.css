@@ -3894,6 +3894,62 @@ input {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background: transparent;
+  opacity: 0.75;
+}
+
+.btn-red {
+  background-color: #ffadad;
+}
+
+.btn-orange {
+  background-color: #ffd6a5;
+}
+
+.btn-yellow {
+  background-color: #fdffb6;
+}
+
+.btn-green {
+  background-color: #caffbf;
+}
+
+.btn-cyan {
+  background-color: #9bf6ff;
+}
+
+.btn-blue {
+  background-color: #a0c4ff;
+}
+
+.btn-purple {
+  background-color: #bdb2ff;
+}
+
+.btn-pink {
+  background-color: #ffc6ff;
+}
+
+.btn-white {
+  background-color: #fffffc;
+}
+
+.btn-dark {
+  background-color: #343a40;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn:active {
+  cursor: wait;
+}
+
 /*
 GENERAL
 */
@@ -3908,4 +3964,4 @@ body {
 ::after,
 ::before {
   box-sizing: border-box;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=HyperCSS.css.map */

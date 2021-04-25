@@ -1,0 +1,26 @@
+@use '../themes/colours';
+
+.btn {
+    cursor: pointer;
+
+    padding: 0.5rem 1rem;
+
+    border: 0;
+    background: transparent;
+
+    opacity: 0.75;
+}
+
+@each $name, $colour in colours.$colours {
+    .btn-#{$name} {
+        background-color: $colour;
+    }
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn:active {
+    cursor: wait;
+}

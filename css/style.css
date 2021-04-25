@@ -3308,6 +3308,30 @@
   width: 100%;
 }
 
+.d-inline {
+  display: inline;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-none {
+  display: none;
+}
+
 @media (min-width: 576px) {
   .col-sm-1 {
     flex: 1 0 auto;
@@ -3367,6 +3391,30 @@
   .col-sm-12 {
     flex: 1 0 auto;
     width: 100%;
+  }
+
+  .d-sm-inline {
+    display: inline;
+  }
+
+  .d-sm-block {
+    display: block;
+  }
+
+  .d-sm-flex {
+    display: flex;
+  }
+
+  .d-sm-inline-block {
+    display: inline-block;
+  }
+
+  .d-sm-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-sm-none {
+    display: none;
   }
 }
 @media (min-width: 768px) {
@@ -3429,6 +3477,30 @@
     flex: 1 0 auto;
     width: 100%;
   }
+
+  .d-md-inline {
+    display: inline;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+
+  .d-md-flex {
+    display: flex;
+  }
+
+  .d-md-inline-block {
+    display: inline-block;
+  }
+
+  .d-md-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-md-none {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .col-lg-1 {
@@ -3489,6 +3561,30 @@
   .col-lg-12 {
     flex: 1 0 auto;
     width: 100%;
+  }
+
+  .d-lg-inline {
+    display: inline;
+  }
+
+  .d-lg-block {
+    display: block;
+  }
+
+  .d-lg-flex {
+    display: flex;
+  }
+
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+
+  .d-lg-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-lg-none {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -3551,6 +3647,30 @@
     flex: 1 0 auto;
     width: 100%;
   }
+
+  .d-xl-inline {
+    display: inline;
+  }
+
+  .d-xl-block {
+    display: block;
+  }
+
+  .d-xl-flex {
+    display: flex;
+  }
+
+  .d-xl-inline-block {
+    display: inline-block;
+  }
+
+  .d-xl-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-xl-none {
+    display: none;
+  }
 }
 @media (min-width: 1400px) {
   .col-xxl-1 {
@@ -3611,6 +3731,30 @@
   .col-xxl-12 {
     flex: 1 0 auto;
     width: 100%;
+  }
+
+  .d-xxl-inline {
+    display: inline;
+  }
+
+  .d-xxl-block {
+    display: block;
+  }
+
+  .d-xxl-flex {
+    display: flex;
+  }
+
+  .d-xxl-inline-block {
+    display: inline-block;
+  }
+
+  .d-xxl-inline-flex {
+    display: inline-flex;
+  }
+
+  .d-xxl-none {
+    display: none;
   }
 }
 label {

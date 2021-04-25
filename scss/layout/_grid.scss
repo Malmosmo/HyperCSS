@@ -12,12 +12,24 @@
     }
 }
 
+@each $display in variables.$displays {
+    .d-#{$display} {
+        display: $display;
+    }
+}
+
 @each $breakpoint_name, $breakpoint in variables.$breakpoints {
     @media (min-width: $breakpoint) {
         @for $var from 1 through 12 {
             .col-#{$breakpoint_name}-#{$var} {
                 flex: 1 0 auto;
                 width: percentage($var / 12);
+            }
+        }
+
+        @each $display in variables.$displays {
+            .d-#{$breakpoint_name}-#{$display} {
+                display: $display;
             }
         }
     }

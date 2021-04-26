@@ -1,24 +1,25 @@
 @use '../themes/colours';
+@use '../utilities/mixins';
 
 .btn {
     cursor: pointer;
 
-    padding: 0.5rem 1rem;
+    padding: 0.5em 1em;
 
     border: 0;
     background: transparent;
 
-    opacity: 0.75;
+    border-radius: 0.125rem;
 }
 
 @each $name, $colour in colours.$colours {
     .btn-#{$name} {
-        background-color: $colour;
+        @include mixins.button(
+            $colour,
+            map-get(colours.$colours, "dark"),
+            map-get(colours.$colours, "white")
+        );
     }
-}
-
-.btn:hover {
-    opacity: 1;
 }
 
 .btn:active {

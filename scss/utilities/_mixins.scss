@@ -1,0 +1,13 @@
+@import "functions";
+
+$threshold: 55%;
+
+@mixin button($background-color, $dark: #000, $light: #fff) {
+    background-color: $background-color;
+    color: contrast-color($background-color, $dark, $light);
+
+    &:hover {
+        background-color: darken($background-color, 15%);
+        color: contrast-color(darken($background-color, 15%), $dark, $light);
+    }
+}

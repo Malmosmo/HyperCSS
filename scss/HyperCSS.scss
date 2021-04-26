@@ -1,10 +1,14 @@
-@use "utilities/spacing";
-@use "layout/grid";
-@use "layout/forms";
-@use "themes/theme";
 @use "base/typograhpy";
 
+@use "utilities/spacing";
+
+@use "layout/grid";
+@use "layout/forms";
+
+@use "themes/theme";
+
 @use "components/buttons";
+@use "components/lists";
 
 /*
 GENERAL

@@ -1,10 +1,10 @@
 @use '../themes/colours';
 @use '../utilities/mixins';
 
-.btn {
+.button {
     cursor: pointer;
 
-    padding: 0.5em 1em;
+    padding: 0.375rem 0.75rem;
 
     border: 0;
     background: transparent;
@@ -13,7 +13,7 @@
 }
 
 @each $name, $colour in colours.$colours {
-    .btn-#{$name} {
+    .button-#{$name} {
         @include mixins.button(
             $colour,
             map-get(colours.$colours, "dark"),
@@ -22,6 +22,6 @@
     }
 }
 
-.btn:active {
+.button:active {
     cursor: wait;
 }

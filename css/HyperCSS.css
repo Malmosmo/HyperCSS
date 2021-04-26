@@ -1,3 +1,13 @@
+body,
+input {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 @media (min-width: 576px) {
   .ms-sm-auto {
     margin-left: auto;
@@ -3892,125 +3902,161 @@ label {
   color: #6f42c1;
 }
 
-body,
-input {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.btn {
+.button {
   cursor: pointer;
-  padding: 0.5em 1em;
+  padding: 0.375rem 0.75rem;
   border: 0;
   background: transparent;
   border-radius: 0.125rem;
 }
 
-.btn-white {
+.button-white {
   background-color: white;
   color: #212529;
 }
-.btn-white:hover {
+.button-white:hover {
   background-color: #d9d9d9;
   color: #212529;
 }
 
-.btn-dark {
+.button-dark {
   background-color: #212529;
   color: white;
 }
-.btn-dark:hover {
+.button-dark:hover {
   background-color: black;
   color: white;
 }
 
-.btn-light {
+.button-light {
   background-color: #ced4da;
   color: #212529;
 }
-.btn-light:hover {
+.button-light:hover {
   background-color: #a2aeb9;
   color: #212529;
 }
 
-.btn-blue {
+.button-blue {
   background-color: #118ab2;
   color: white;
 }
-.btn-blue:hover {
+.button-blue:hover {
   background-color: #0a546c;
   color: white;
 }
 
-.btn-green {
+.button-green {
   background-color: #2a9d8f;
   color: white;
 }
-.btn-green:hover {
+.button-green:hover {
   background-color: #1a6158;
   color: white;
 }
 
-.btn-yellow {
+.button-yellow {
   background-color: #e9c46a;
   color: #212529;
 }
-.btn-yellow:hover {
+.button-yellow:hover {
   background-color: #dfaa27;
   color: white;
 }
 
-.btn-orange {
+.button-orange {
   background-color: #f4a261;
   color: #212529;
 }
-.btn-orange:hover {
+.button-orange:hover {
   background-color: #ef7819;
   color: white;
 }
 
-.btn-red {
+.button-red {
   background-color: #f28482;
   color: #212529;
 }
-.btn-red:hover {
+.button-red:hover {
   background-color: #eb403d;
   color: #212529;
 }
 
-.btn-pink {
+.button-pink {
   background-color: #d63384;
   color: white;
 }
-.btn-pink:hover {
+.button-pink:hover {
   background-color: #9d205e;
   color: white;
 }
 
-.btn-cyan {
+.button-cyan {
   background-color: #0dcaf0;
   color: white;
 }
-.btn-cyan:hover {
+.button-cyan:hover {
   background-color: #098da7;
   color: white;
 }
 
-.btn-purple {
+.button-purple {
   background-color: #6f42c1;
   color: white;
 }
-.btn-purple:hover {
+.button-purple:hover {
   background-color: #4e2d89;
   color: white;
 }
 
-.btn:active {
+.button:active {
   cursor: wait;
+}
+
+/*
+List
+*/
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid #ced4da;
+  border-radius: 0.125rem;
+}
+
+.list-flush {
+  border: 0;
+}
+
+.list > li:not(:last-child) {
+  border-bottom: 1px solid #ced4da;
+}
+
+.list-item {
+  padding: 0.5rem 1rem;
+}
+
+/*
+Icon List
+*/
+.icon-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-list > li {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-list > li::before {
+  content: attr(data-icon);
+  padding-right: 1rem;
 }
 
 /*

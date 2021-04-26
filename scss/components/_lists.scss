@@ -48,7 +48,7 @@ Icon List
     flex-direction: row;
 }
 
-.icon-list > li::before {
+.icon-list > li[data-icon]::before {
     content: attr(data-icon);
     padding-right: 1rem;
 }

@@ -64,7 +64,7 @@ textarea.form-input {
 }
 
 /*
-Checkbox
+Checkbox, Radio
 */
 
 .form-checkbox {
@@ -72,7 +72,7 @@ Checkbox
     align-items: center;
 }
 
-input[type="checkbox"].form-checkbox-input {
+input.form-checkbox-input {
     appearance: none;
 
     font-size: inherit;
@@ -85,15 +85,54 @@ input[type="checkbox"].form-checkbox-input {
     border: 1px solid darken(map-get(colours.$colours, "light"), 20%);
     border-radius: 0.125em;
 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
     transition: 200ms ease-in-out;
 }
 
-input[type="checkbox"].form-checkbox-input:checked {
-    border-color: map-get(colours.$colours, "purple");
+input[type="radio"].form-checkbox-input {
+    border-radius: 50%;
+}
 
+input.form-checkbox-input:checked {
+    border-color: map-get(colours.$colours, "purple");
     background-color: map-get(colours.$colours, "purple");
+}
+
+input[type="checkbox"].form-checkbox-input:checked {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='2 2 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+input[type="radio"].form-checkbox-input:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+// Affect other (unwanted) types!!!!
+
+input:disabled ~ label,
+input:disabled {
+    opacity: 0.5;
+    user-select: none;
+}
+
+input:disabled {
+    background-color: lighten(map-get(colours.$colours, "light"), 10%);
+}
+
+.switch > input.form-checkbox-input {
+    width: 2em;
+    border-radius: 2em;
+
+    background-position: left center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+}
+
+.switch > input.form-checkbox-input:checked {
+    /*border-color: map-get(colours.$colours, "purple");
+    background-color: map-get(colours.$colours, "purple");
+*/
+    background-position: right center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }

@@ -1,3 +1,16 @@
+@use 'variables';
+
+// returns
 @function contrast-color($color, $dark, $light) {
     @return if(lightness($color) < $threshold, $light, $dark);
+}
+
+// returns breakpoint value
+@function breakpoint($bp) {
+    @return map-get(variables.$breakpoints, $bp);
+}
+
+// returns container size
+@function container($container-size) {
+    @return map-get(variables.$container-sizes, $container-size);
 }

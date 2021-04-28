@@ -1,0 +1,14 @@
+@use '../utilities/variables';
+@use '../utilities/functions';
+@use '../utilities/mixins';
+
+.container {
+    margin: 0 auto;
+
+    @each $bp, $container-size in variables.$container-sizes {
+        @include mixins.min(#{functions.breakpoint(#{$bp})}) {
+            width: 100%;
+            max-width: functions.container(#{$bp});
+        }
+    }
+}

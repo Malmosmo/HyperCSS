@@ -11,3 +11,16 @@ $threshold: 55%;
         color: contrast-color(darken($background-color, 15%), $dark, $light);
     }
 }
+
+// media selector for breakpoints
+@mixin min($bp, $max: "null", $device: "screen") {
+    @if $max == "null" {
+        @media only #{$device} and (min-width: #{$bp}) {
+            @content;
+        }
+    } @else {
+        @media only #{$device} and (min-width: #{$bp}) and (max-width: #{$max}) {
+            @content;
+        }
+    }
+}

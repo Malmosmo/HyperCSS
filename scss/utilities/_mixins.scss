@@ -12,6 +12,16 @@ $threshold: 55%;
     }
 }
 
+@mixin button-outline($background-color, $dark: #000, $light: #fff) {
+    border: 1px solid $background-color;
+    color: contrast-color($background-color, $dark, $light);
+
+    &:hover {
+        background-color: darken($background-color, 15%);
+        color: contrast-color(darken($background-color, 15%), $dark, $light);
+    }
+}
+
 // media selector for breakpoints
 @mixin min($bp, $max: "null", $device: "screen") {
     @if $max == "null" {

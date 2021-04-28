@@ -26,6 +26,14 @@
             map-get(colours.$colours, "white")
         );
     }
+
+    .button-outline-#{$name} {
+        @include mixins.button-outline(
+            $colour,
+            map-get(colours.$colours, "dark"),
+            map-get(colours.$colours, "white")
+        );
+    }
 }
 
 .button:active {

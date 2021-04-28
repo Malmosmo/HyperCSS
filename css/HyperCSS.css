@@ -4073,11 +4073,29 @@ Range
   color: #212529;
 }
 
+.button-outline-white {
+  border: 1px solid white;
+  color: #212529;
+}
+.button-outline-white:hover {
+  background-color: #d9d9d9;
+  color: #212529;
+}
+
 .button-dark {
   background-color: #212529;
   color: white;
 }
 .button-dark:hover {
+  background-color: black;
+  color: white;
+}
+
+.button-outline-dark {
+  border: 1px solid #212529;
+  color: white;
+}
+.button-outline-dark:hover {
   background-color: black;
   color: white;
 }
@@ -4091,11 +4109,29 @@ Range
   color: #212529;
 }
 
+.button-outline-light {
+  border: 1px solid #ced4da;
+  color: #212529;
+}
+.button-outline-light:hover {
+  background-color: #a2aeb9;
+  color: #212529;
+}
+
 .button-blue {
   background-color: #118ab2;
   color: white;
 }
 .button-blue:hover {
+  background-color: #0a546c;
+  color: white;
+}
+
+.button-outline-blue {
+  border: 1px solid #118ab2;
+  color: white;
+}
+.button-outline-blue:hover {
   background-color: #0a546c;
   color: white;
 }
@@ -4109,11 +4145,29 @@ Range
   color: white;
 }
 
+.button-outline-green {
+  border: 1px solid #2a9d8f;
+  color: white;
+}
+.button-outline-green:hover {
+  background-color: #1a6158;
+  color: white;
+}
+
 .button-yellow {
   background-color: #e9c46a;
   color: #212529;
 }
 .button-yellow:hover {
+  background-color: #dfaa27;
+  color: white;
+}
+
+.button-outline-yellow {
+  border: 1px solid #e9c46a;
+  color: #212529;
+}
+.button-outline-yellow:hover {
   background-color: #dfaa27;
   color: white;
 }
@@ -4127,11 +4181,29 @@ Range
   color: white;
 }
 
+.button-outline-orange {
+  border: 1px solid #f4a261;
+  color: #212529;
+}
+.button-outline-orange:hover {
+  background-color: #ef7819;
+  color: white;
+}
+
 .button-red {
   background-color: #f28482;
   color: #212529;
 }
 .button-red:hover {
+  background-color: #eb403d;
+  color: #212529;
+}
+
+.button-outline-red {
+  border: 1px solid #f28482;
+  color: #212529;
+}
+.button-outline-red:hover {
   background-color: #eb403d;
   color: #212529;
 }
@@ -4145,6 +4217,15 @@ Range
   color: white;
 }
 
+.button-outline-pink {
+  border: 1px solid #d63384;
+  color: white;
+}
+.button-outline-pink:hover {
+  background-color: #9d205e;
+  color: white;
+}
+
 .button-cyan {
   background-color: #0dcaf0;
   color: white;
@@ -4154,11 +4235,29 @@ Range
   color: white;
 }
 
+.button-outline-cyan {
+  border: 1px solid #0dcaf0;
+  color: white;
+}
+.button-outline-cyan:hover {
+  background-color: #098da7;
+  color: white;
+}
+
 .button-purple {
   background-color: #6f42c1;
   color: white;
 }
 .button-purple:hover {
+  background-color: #4e2d89;
+  color: white;
+}
+
+.button-outline-purple {
+  border: 1px solid #6f42c1;
+  color: white;
+}
+.button-outline-purple:hover {
   background-color: #4e2d89;
   color: white;
 }

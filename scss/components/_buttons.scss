@@ -1,5 +1,6 @@
 @use '../themes/colours';
 @use '../utilities/mixins';
+@use '../utilities/functions';
 
 .button {
     font-family: inherit;
@@ -22,16 +23,16 @@
     .button-#{$name} {
         @include mixins.button(
             $colour,
-            map-get(colours.$colours, "dark"),
-            map-get(colours.$colours, "white")
+            functions.get-color("dark"),
+            functions.get-color("white")
         );
     }
 
     .button-outline-#{$name} {
         @include mixins.button-outline(
             $colour,
-            map-get(colours.$colours, "dark"),
-            map-get(colours.$colours, "white")
+            functions.get-color("dark"),
+            functions.get-color("white")
         );
     }
 }

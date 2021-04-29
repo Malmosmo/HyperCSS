@@ -1,4 +1,5 @@
 @use '../themes/colours';
+@use '../utilities/functions';
 
 label {
     display: inline-block;
@@ -6,7 +7,7 @@ label {
 
 .form-group {
     display: flex;
-    border: 1px solid map-get(colours.$colours, "light");
+    border: 1px solid functions.get-color("light");
 }
 
 .form-group input {
@@ -31,11 +32,11 @@ label {
 }
 
 .form-group > .form-label:not(:last-child) {
-    border-right: 1px solid map-get(colours.$colours, "light");
+    border-right: 1px solid functions.get-color("light");
 }
 
 .form-group > .form-label:not(:first-child) {
-    border-left: 1px solid map-get(colours.$colours, "light");
+    border-left: 1px solid functions.get-color("light");
 }
 
 .form-input {
@@ -43,7 +44,7 @@ label {
 
     width: 100%;
 
-    border: 1px solid map-get(colours.$colours, "light");
+    border: 1px solid functions.get-color("light");
 
     box-shadow: none;
     outline: none;
@@ -84,7 +85,7 @@ Checkbox, Radio
 
     margin-right: 0.5em;
 
-    border: 1px solid darken(map-get(colours.$colours, "light"), 0%);
+    border: 1px solid darken(functions.get-color("light"), 0%);
     border-radius: 0.125em;
 
     background-position: center;
@@ -108,8 +109,8 @@ Checkbox, Radio
 
 .form-checkbox-input:checked,
 .form-switch-input:checked {
-    border-color: map-get(colours.$colours, "purple");
-    background-color: map-get(colours.$colours, "purple");
+    border-color: functions.get-color("purple");
+    background-color: functions.get-color("purple");
 }
 
 .form-checkbox-input[type="checkbox"]:checked {
@@ -158,24 +159,23 @@ Range
 
     color: transparent;
 
-    background-color: #dee2e6;
+    background-color: darken(functions.get-color("light"), 30%);
 
     border-radius: 1em;
 }
 
 .form-range::-moz-range-progress {
-    background-color: red;
     height: 0.5em;
     border-radius: 1em;
 
-    background-color: lighten(map-get(colours.$colours, "purple"), 30%);
+    background-color: lighten(functions.get-color("purple"), 30%);
 }
 
 .form-range::-moz-range-thumb {
     width: 1em;
     height: 1em;
 
-    background-color: map-get(colours.$colours, "purple");
+    background-color: functions.get-color("purple");
 
     border: 0;
     border-radius: 50%;

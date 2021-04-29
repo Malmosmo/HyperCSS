@@ -1,4 +1,5 @@
 @use '../themes/colours';
+@use '../utilities/functions';
 
 /*
 List
@@ -13,7 +14,7 @@ List
 
     list-style: none;
 
-    border: 1px solid map-get(colours.$colours, "light");
+    border: 1px solid functions.get-color("light");
     border-radius: 0.125rem;
 }
 
@@ -22,7 +23,7 @@ List
 }
 
 .list > li:not(:last-child) {
-    border-bottom: 1px solid map-get(colours.$colours, "light");
+    border-bottom: 1px solid functions.get-color("light");
 }
 
 .list-item {

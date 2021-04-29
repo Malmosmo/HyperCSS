@@ -6,41 +6,41 @@
             @each $direction_name, $direction in variables.$directions {
                 @if $direction_name == x {
                     .m#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
-                        margin-left: $spacer;
-                        margin-right: $spacer;
+                        margin-left: $spacer !important;
+                        margin-right: $spacer !important;
                     }
 
                     .p#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
-                        padding-left: $spacer;
-                        padding-right: $spacer;
+                        padding-left: $spacer !important;
+                        padding-right: $spacer !important;
                     }
                 } @else if $direction_name == y {
                     .m#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
-                        margin-top: $spacer;
-                        margin-bottom: $spacer;
+                        margin-top: $spacer !important;
+                        margin-bottom: $spacer !important;
                     }
 
                     .p#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
-                        padding-top: $spacer;
-                        padding-bottom: $spacer;
+                        padding-top: $spacer !important;
+                        padding-bottom: $spacer !important;
                     }
                 } @else {
                     .m#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
-                        margin-#{$direction}: $spacer;
+                        margin-#{$direction}: $spacer !important;
                     }
 
                     .p#{$direction_name}-#{$breakpoint_name}-#{$spacer_name} {
-                        padding-#{$direction}: $spacer;
+                        padding-#{$direction}: $spacer !important;
                     }
                 }
             }
 
             .m-#{$breakpoint_name}-#{$spacer_name} {
-                margin: $spacer;
+                margin: $spacer !important;
             }
 
             .p-#{$breakpoint_name}-#{$spacer_name} {
-                padding: $spacer;
+                padding: $spacer !important;
             }
         }
     }
@@ -50,40 +50,40 @@
     @each $direction_name, $direction in variables.$directions {
         @if $direction_name == x {
             .m#{$direction_name}-#{$spacer_name} {
-                margin-left: $spacer;
-                margin-right: $spacer;
+                margin-left: $spacer !important;
+                margin-right: $spacer !important;
             }
 
             .p#{$direction_name}-#{$spacer_name} {
-                padding-left: $spacer;
-                padding-right: $spacer;
+                padding-left: $spacer !important;
+                padding-right: $spacer !important;
             }
         } @else if $direction_name == y {
             .m#{$direction_name}-#{$spacer_name} {
-                margin-top: $spacer;
-                margin-bottom: $spacer;
+                margin-top: $spacer !important;
+                margin-bottom: $spacer !important;
             }
 
             .p#{$direction_name}-#{$spacer_name} {
-                padding-top: $spacer;
-                padding-bottom: $spacer;
+                padding-top: $spacer !important;
+                padding-bottom: $spacer !important;
             }
         } @else {
             .m#{$direction_name}-#{$spacer_name} {
-                margin-#{$direction}: $spacer;
+                margin-#{$direction}: $spacer !important;
             }
 
             .p#{$direction_name}-#{$spacer_name} {
-                padding-#{$direction}: $spacer;
+                padding-#{$direction}: $spacer !important;
             }
         }
     }
 
     .m-#{$spacer_name} {
-        margin: $spacer;
+        margin: $spacer !important;
     }
 
     .p-#{$spacer_name} {
-        padding: $spacer;
+        padding: $spacer !important;
     }
 }

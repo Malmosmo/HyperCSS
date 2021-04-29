@@ -1,6 +1,11 @@
 @use 'variables';
+@use '../themes/colours';
 
-// returns
+@function get-color($color) {
+    @return map-get(colours.$colours, $color);
+}
+
+// returns contrast color
 @function contrast-color($color, $dark, $light) {
     @return if(lightness($color) < $threshold, $light, $dark);
 }

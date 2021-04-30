@@ -8,4 +8,3 @@ CSS Framework
 2. [https://getbootstrap.com/docs/5.0](https://getbootstrap.com/docs/5.0)
 3. [https://moderncss.dev/totally-custom-list-styles/](https://moderncss.dev/totally-custom-list-styles/)
 4. [https://vinceumo.github.io/devNotes/Sass/responsive-container-classes-with-scss/](https://vinceumo.github.io/devNotes/Sass/responsive-container-classes-with-scss/)
-5. 

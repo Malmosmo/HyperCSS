@@ -1,0 +1,9 @@
+@use '../utilities/functions';
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(functions.get-color("dark"), 0.25);
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(functions.get-color("dark"), 0.25);
+}

@@ -1,15 +1,18 @@
 @use "base/typograhpy";
+@use "base/shadows";
 
 @use "utilities/spacing";
 
 @use "layout/container";
 @use "layout/grid";
 @use "layout/forms";
+@use "layout/nav";
 
 @use "themes/theme";
 
 @use "components/buttons";
 @use "components/lists";
+@use "components/animations";
 
 /*
 GENERAL
